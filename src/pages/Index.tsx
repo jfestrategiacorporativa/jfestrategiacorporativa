@@ -205,18 +205,26 @@ const Index = () => {
               <Card key={index} className="relative overflow-hidden border-2 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8 text-center space-y-6">
                   <div className="flex justify-center">
-                    <Badge className={`w-16 h-16 rounded-full flex items-center justify-center text-white bg-${service.color}`}>
+                    <Badge className={`w-16 h-16 rounded-full flex items-center justify-center text-white ${
+                      service.color === 'jf-purple' ? 'bg-jf-purple hover:bg-jf-purple/90' : 'bg-jf-gold hover:bg-jf-gold/90'
+                    } transition-colors duration-300`}>
                       {index + 1}
                     </Badge>
                   </div>
                   
-                  <div className={`mx-auto w-fit p-4 rounded-full bg-${service.color}/10`}>
-                    <div className={`text-${service.color}`}>
+                  <div className={`mx-auto w-fit p-4 rounded-full ${
+                    service.color === 'jf-purple' ? 'bg-jf-purple/10' : 'bg-jf-gold/10'
+                  }`}>
+                    <div className={`${
+                      service.color === 'jf-purple' ? 'text-jf-purple' : 'text-jf-gold'
+                    }`}>
                       {service.icon}
                     </div>
                   </div>
                   
-                  <h3 className={`text-2xl font-bold text-${service.color}`}>
+                  <h3 className={`text-2xl font-bold ${
+                    service.color === 'jf-purple' ? 'text-jf-purple' : 'text-jf-gold'
+                  }`}>
                     {service.title}
                   </h3>
                   
