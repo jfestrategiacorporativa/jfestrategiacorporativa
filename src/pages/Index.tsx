@@ -262,7 +262,7 @@ const Index = () => {
             <div className={`${service.bgColor} text-white rounded-t-2xl p-8`}>
               <div className="flex items-center gap-4 mb-4">
                 {service.icon}
-                <h2 className="text-4xl font-bold text-jf-gold">
+                <h2 className={`text-4xl font-bold ${service.bgColor === 'bg-gradient-gold' ? 'text-jf-purple' : 'text-jf-gold'}`}>
                   {service.title}
                 </h2>
               </div>
@@ -305,7 +305,7 @@ const Index = () => {
                 </div>
                 
                 <div className={`${service.bgColor} text-white rounded-lg p-6`}>
-                  <h4 className="text-2xl font-bold text-jf-gold mb-6">
+                  <h4 className={`text-2xl font-bold mb-6 ${service.bgColor === 'bg-gradient-gold' ? 'text-jf-purple' : 'text-jf-gold'}`}>
                     Ferramentas à sua disposição
                   </h4>
                   <div className="grid md:grid-cols-2 gap-6">
