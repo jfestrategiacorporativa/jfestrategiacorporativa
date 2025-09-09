@@ -15,8 +15,10 @@ import {
   Lightbulb,
   Settings,
   Eye,
-  Award
+  Award,
+  BookOpen
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
@@ -154,6 +156,34 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header Navigation */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="container mx-auto max-w-6xl px-4 py-4">
+          <nav className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-jf-purple/20 bg-jf-purple/10">
+                <div className="text-lg font-bold">
+                  <span className="text-jf-purple">J</span>
+                  <span className="text-jf-gold">F</span>
+                </div>
+              </div>
+              <span className="text-xl font-semibold text-jf-purple">JFEC</span>
+            </div>
+            
+            <div className="flex items-center gap-6">
+              <span className="text-jf-purple font-medium">Home</span>
+              <Link 
+                to="/biblioteca-da-lideranca" 
+                className="flex items-center gap-2 text-muted-foreground hover:text-jf-purple transition-colors"
+              >
+                <BookOpen className="w-4 h-4" />
+                Biblioteca da Liderança
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-hero text-white py-20 px-4">
         <div className="container mx-auto max-w-6xl">
