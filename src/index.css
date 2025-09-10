@@ -39,10 +39,10 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* JF Brand Colors */
-    --jf-purple: 267 83% 35%;
-    --jf-purple-light: 267 83% 45%;
-    --jf-gold: 48 96% 53%;
-    --jf-gold-dark: 48 96% 43%;
+    --jf-purple: 253 43% 41%;
+    --jf-purple-light: 253 43% 51%;
+    --jf-gold: 47 55% 48%;
+    --jf-gold-dark: 47 55% 38%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--jf-purple)), hsl(var(--jf-purple-light)));

@@ -7,24 +7,23 @@ const BibliotecaLideranca = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Navigation */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-black shadow-sm border-b">
         <div className="container mx-auto max-w-6xl px-4 py-4">
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-3">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-jf-purple/20 bg-jf-purple/10">
-                <div className="text-lg font-bold">
-                  <span className="text-jf-purple">J</span>
-                  <span className="text-jf-gold">F</span>
-                </div>
-              </div>
-              <span className="text-xl font-semibold text-jf-purple">JFEC</span>
+              <img 
+                src="/lovable-uploads/c3af4fb9-db98-4785-8166-fe0b0caef8b7.png" 
+                alt="JF Estratégia Corporativa Logo" 
+                className="w-12 h-12 rounded-full"
+              />
+              <span className="text-xl font-semibold text-jf-gold">JFEC</span>
             </Link>
             
             <div className="flex items-center gap-6">
-              <Link to="/" className="text-muted-foreground hover:text-jf-purple transition-colors">
+              <Link to="/" className="text-jf-gold hover:text-white transition-colors">
                 Home
               </Link>
-              <span className="text-jf-purple font-medium">Biblioteca da Liderança</span>
+              <span className="text-white font-medium">Biblioteca da Liderança</span>
             </div>
           </nav>
         </div>
