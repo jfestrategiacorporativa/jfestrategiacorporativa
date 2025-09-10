@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Instagram, Rocket } from "lucide-react";
+import { BookOpen, Instagram, Rocket, House } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BibliotecaLideranca = () => {
@@ -10,7 +10,7 @@ const BibliotecaLideranca = () => {
       <header className="bg-black shadow-sm border-b">
         <div className="container mx-auto max-w-6xl px-4 py-4">
           <nav className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-start gap-1">
               <img 
                 src="/img/header-logo.png" 
                 alt="JF Estratégia Corporativa Logo" 
@@ -20,11 +20,15 @@ const BibliotecaLideranca = () => {
               <span className="text-xl font-semibold text-jf-gold hidden md:block">JF Estratégia Corporativa</span>
             </Link>
             
-            <div className="flex items-center gap-6">
-              <Link to="/" className="text-jf-gold hover:text-white transition-colors">
+            <div className="flex items-end gap-4">
+              <Link to="/" className="flex items-center text-jf-gold hover:text-white transition-colors gap-1">
+                <House className="w-4 h-4" />  
                 Home
               </Link>
-              <span className="text-white font-medium">Biblioteca da Liderança</span>
+              <span className="flex items-center text-white font-medium gap-1">
+                <BookOpen className="w-4 h-4" />
+                <span>Biblioteca da Liderança</span>
+              </span>
             </div>
           </nav>
         </div>

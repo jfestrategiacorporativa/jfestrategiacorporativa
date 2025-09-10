@@ -16,7 +16,8 @@ import {
   Settings,
   Eye,
   Award,
-  BookOpen
+  BookOpen,
+  House
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -160,7 +161,7 @@ const Index = () => {
       <header className="bg-black shadow-sm border-b">
         <div className="container mx-auto max-w-6xl px-4 py-4">
           <nav className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex items-start gap-1">
               <img 
                 src="/img/header-logo.png" 
                 alt="JF Estratégia Corporativa Logo" 
@@ -169,11 +170,15 @@ const Index = () => {
               <span className="text-xl font-semibold text-jf-gold hidden md:block">JF Estratégia Corporativa</span>
             </div>
             
-            <div className="flex items-center gap-6">
-              <span className="text-white font-medium">Home</span>
+            <div className="flex items-end gap-4">
+              <span className="flex items-center text-white font-medium gap-1">
+                <House className="w-4 h-4" />
+                <span>Home</span>
+              </span>
+
               <Link 
                 to="/biblioteca-da-lideranca" 
-                className="flex items-center gap-2 text-jf-gold hover:text-white transition-colors"
+                className="flex items-center gap-1 text-jf-gold hover:text-white transition-colors"
               >
                 <BookOpen className="w-4 h-4" />
                 Biblioteca da Liderança
