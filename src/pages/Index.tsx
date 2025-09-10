@@ -189,7 +189,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex items-center justify-center min-h-[400px]">
             <img 
-              src="/src/assets/jf-logo.png" 
+              src="/img/jf-logo.png" 
               alt="JF Estratégia Corporativa" 
               className="max-w-md w-full h-auto object-contain"
             />
