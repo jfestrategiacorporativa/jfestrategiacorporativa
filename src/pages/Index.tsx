@@ -162,7 +162,7 @@ const Index = () => {
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img 
-                src="/lovable-uploads/c3af4fb9-db98-4785-8166-fe0b0caef8b7.png" 
+                src="/img/header-logo.png" 
                 alt="JF Estratégia Corporativa Logo" 
                 className="w-12 h-12 rounded-full"
               />
