@@ -318,7 +318,7 @@ const Index = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-yellow-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0 mt-1">
+                    <div className="bg-jf-gold text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0 mt-1">
                       !
                     </div>
                     <div>
