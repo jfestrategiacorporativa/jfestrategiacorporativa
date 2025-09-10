@@ -166,7 +166,8 @@ const Index = () => {
                 alt="JF Estratégia Corporativa Logo" 
                 className="w-12 h-12 rounded-full"
               />
-              <span className="text-xl font-semibold text-jf-gold">JFEC</span>
+              <span className="text-xl font-semibold text-jf-gold md:hidden">JFEC</span>
+              <span className="text-xl font-semibold text-jf-gold hidden md:block">JF Estratégia Corporativa</span>
             </div>
             
             <div className="flex items-center gap-6">
@@ -183,26 +184,18 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Logo Section */}
       <section className="relative overflow-hidden bg-gradient-hero text-white py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center space-y-8">
-            <div className="inline-flex items-center justify-center w-32 h-32 mx-auto rounded-full border-4 border-white/20 bg-white/10 backdrop-blur-sm">
-              <div className="text-6xl font-bold">
-                <span className="text-jf-purple">J</span>
-                <span className="text-jf-gold">F</span>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-                Portfólio de Serviços
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-jf-gold">
-                JF Estratégia Corporativa
-              </h2>
-            </div>
-            
+          <div className="flex items-center justify-center min-h-[400px]">
+            <img 
+              src="/src/assets/jf-logo.png" 
+              alt="JF Estratégia Corporativa" 
+              className="max-w-md w-full h-auto object-contain"
+            />
+          </div>
+          
+          <div className="text-center mt-12">
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed">
               <p>
                 Acreditamos que empresas com um bom nível de consciência criam 

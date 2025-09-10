@@ -16,7 +16,8 @@ const BibliotecaLideranca = () => {
                 alt="JF Estratégia Corporativa Logo" 
                 className="w-12 h-12 rounded-full"
               />
-              <span className="text-xl font-semibold text-jf-gold">JFEC</span>
+              <span className="text-xl font-semibold text-jf-gold md:hidden">JFEC</span>
+              <span className="text-xl font-semibold text-jf-gold hidden md:block">JF Estratégia Corporativa</span>
             </Link>
             
             <div className="flex items-center gap-6">
