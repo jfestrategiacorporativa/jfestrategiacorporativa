@@ -10,7 +10,7 @@ const BibliotecaLideranca = () => {
       <header className="bg-black shadow-sm border-b">
         <div className="container mx-auto max-w-6xl px-4 py-4">
           <nav className="flex items-center justify-between">
-            <Link to="/" className="flex items-start gap-1">
+            <Link to="/" className="flex items-center gap-1">
               <img 
                 src="/img/header-logo.png" 
                 alt="JF Estratégia Corporativa Logo" 
