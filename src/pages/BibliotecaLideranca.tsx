@@ -4,6 +4,19 @@ import { BookOpen, Instagram, Rocket, House } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BibliotecaLideranca = () => {
+  const books = [
+    {
+      title: "Gapology",
+      subtitle: "Como líderes vencedores fecham gaps de performance",
+      authors: [
+        "Mark Thienes",
+        "Brian Brockhoff"
+      ],
+      affiliateLink: "https://a.co/d/iA0zTO0",
+      jfecInstagramPostLink: "https://www.instagram.com/p/DOW-JwSjryO/"
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header Navigation */}
@@ -60,21 +73,15 @@ const BibliotecaLideranca = () => {
           
           {/* First Banner - Em Destaque */}
           <Card className="overflow-hidden border-2 border-jf-purple/20 shadow-lg">
-            <div className="bg-gradient-primary text-white p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <Rocket className="w-12 h-12 text-jf-gold" />
-                <h2 className="text-3xl font-bold text-jf-gold">Em Breve</h2>
-              </div>
-            </div>
-            
             <CardContent className="p-8 space-y-6">
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  Ainda não temos sugestões bibliográficas publicadas por aqui — mas isso vai mudar em breve. 🚀
+                  📚 A JFEC é afiliada a sites confi&aacute;veis para que voc&ecirc; adquira, com seguran&ccedil;a, os livros mais relevantes sobre <strong className="text-jf-gold">Lideran&ccedil;a de Pessoas</strong> e <strong className="text-jf-gold">Gest&atilde;o de Neg&oacute;cios</strong>.
                 </p>
                 <p>
-                  Muito em breve, este espaço vai reunir os principais livros que inspiram líderes e empreendedores no mundo todo, com insights práticos para você aplicar no seu negócio.
-                </p>              </div>
+                  Confira abaixo nossas recomenda&ccedil;&otilde;es, explore as postagens relacionadas para mais detalhes e lembre-se: ao comprar pelos nossos links de afiliado, voc&ecirc; apoia diretamente essa nossa iniciativa! 🚀
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -92,7 +99,7 @@ const BibliotecaLideranca = () => {
                 </div>
               </div>
               <div className="p-2">
-                <div className="flex-1 space-y-1">
+                <div className="md:flex-none sm:flex-1 space-y-1">
                   <p className="text-muted-foreground">
                     Continue acompanhando a JFEC no Instagram para não perder as próximas atualizações da nossa biblioteca.
                   </p>
@@ -109,7 +116,9 @@ const BibliotecaLideranca = () => {
                       className="inline-flex items-center gap-2"
                     >
                       <Instagram className="w-4 h-4" />
-                      Seguir @jfestrategiacorporativa
+                      <span>
+                        <span className="max-sm:hidden">Seguir </span><span>@jfestrategiacorporativa</span>
+                      </span>
                     </a>
                   </Button>
                 </div>
