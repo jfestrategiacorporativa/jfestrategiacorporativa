@@ -74,31 +74,25 @@ const BibliotecaLideranca = () => {
                 </p>
                 <p>
                   Muito em breve, este espaço vai reunir os principais livros que inspiram líderes e empreendedores no mundo todo, com insights práticos para você aplicar no seu negócio.
-                </p>
-              </div>
-              
-              <div className="bg-jf-gold/10 border border-jf-gold/20 rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <BookOpen className="w-6 h-6 text-jf-gold" />
-                  <span className="font-semibold text-jf-purple">Nossa Missão</span>
-                </div>
-                <p className="text-muted-foreground">
-                  Democratizar o acesso ao conhecimento que transforma organizações em ambientes mais humanos, produtivos e conscientes.
-                </p>
-              </div>
+                </p>              </div>
             </CardContent>
           </Card>
 
           {/* Second Banner - Acompanhe */}
           <Card className="border border-muted bg-muted/20">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-orange-500 rounded-lg flex items-center justify-center">
-                  <Instagram className="w-6 h-6 text-white" />
+            <CardContent className="p-6 text-center">
+              <div className="p-2">
+                <div className="flex items-center justify-center gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-orange-500 rounded-lg flex items-center justify-center">
+                    <Instagram className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-none space-y-1">
+                    <h3 className="text-lg font-semibold text-jf-purple">Fique por dentro das novidades</h3>
+                  </div>
                 </div>
-                
-                <div className="flex-1 space-y-2">
-                  <h3 className="text-lg font-semibold text-jf-purple">Fique por dentro das novidades</h3>
+              </div>
+              <div className="p-2">
+                <div className="flex-1 space-y-1">
                   <p className="text-muted-foreground">
                     Continue acompanhando a JFEC no Instagram para não perder as próximas atualizações da nossa biblioteca.
                   </p>
@@ -124,13 +118,7 @@ const BibliotecaLideranca = () => {
           </Card>
 
           {/* Call to Action */}
-          <div className="text-center space-y-6 pt-8">
-            <div className="space-y-3">
-              <h3 className="text-2xl font-bold text-jf-purple">Quer saber quando a biblioteca estiver disponível?</h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Cadastre-se para receber uma notificação assim que publicarmos as primeiras recomendações de leitura.
-              </p>
-            </div>
+          <div className="text-center space-y-6">
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -139,16 +127,6 @@ const BibliotecaLideranca = () => {
                 asChild
               >
                 <Link to="/">Voltar para Home</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-jf-gold text-jf-gold hover:bg-jf-gold hover:text-white"
-                asChild
-              >
-                <a href="https://instagram.com/jfestrategiacorporativa" target="_blank" rel="noopener noreferrer">
-                  Seguir no Instagram
-                </a>
               </Button>
             </div>
           </div>
