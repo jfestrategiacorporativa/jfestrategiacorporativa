@@ -86,7 +86,7 @@ const BibliotecaLideranca = () => {
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-orange-500 rounded-lg flex items-center justify-center">
                     <Instagram className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex-none space-y-1">
+                  <div className="md:flex-none sm:flex-1 space-y-1">
                     <h3 className="text-lg font-semibold text-jf-purple">Fique por dentro das novidades</h3>
                   </div>
                 </div>

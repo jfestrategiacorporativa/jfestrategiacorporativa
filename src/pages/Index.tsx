@@ -55,7 +55,7 @@ const Index = () => {
         "Falta de prioridades claras para o futuro"
       ],
       tools: ["Análise SWOT minuciosa", "Mapeamento de motivadores intrínsecos", "Mapeamento de padrões de comportamento", "Entrevistas individuais e dinâmicas com grupo de líderes"],
-      icon: <BarChart3 className="w-12 h-12" />,
+      icon: <BarChart3 className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-primary",
       highlightText: "Para alcançar esse NÍVEL DE CONSCIÊNCIA ORGANIZACIONAL é preciso realizar um DIAGNÓSTICO COMPLETO, envolvendo todos os pontos de vista e compreender quais características contribuem ou desfavorecem a fluidez operacional da sua organização."
     },
@@ -70,7 +70,7 @@ const Index = () => {
         "Baixo engajamento com o propósito e missão do negócio"
       ],
       tools: ["Definição de Visão e Missão Organizacionais", "Mapeamento de valores que nortearam decisões na organização", "Golden Circle: redescoberta de Propósito, Diferencial e Oferta", "Construção de uma base de conhecimento sólida e acessível"],
-      icon: <Award className="w-12 h-12" />,
+      icon: <Award className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-gold",
       highlightText: "Para fortalecer sua CULTURA ORGANIZACIONAL é essencial definir claramente seus VALORES, PROPÓSITO E IDENTIDADE, criando um ambiente onde todos se sintam parte de algo maior e trabalhem alinhados aos mesmos princípios."
     },
@@ -85,7 +85,7 @@ const Index = () => {
         "Alto desperdício de recursos valiosos como tempo, esforço, dinheiro e até saúde dos colaboradores"
       ],
       tools: ["Planejamento balanceado usando quadro visual do BSC", "Metas claras e relevantes definidas com SMART GOALS", "Planos de ação eficazes e bem estruturados com 12 WEEK ROADMAP", "Supervisão e ajustes finos usando SCALED AGILE"],
-      icon: <Target className="w-12 h-12" />,
+      icon: <Target className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-primary",
       highlightText: "Para implementar um PLANEJAMENTO ESTRATÉGICO eficaz é fundamental estabelecer METAS CLARAS, PROCESSOS ESTRUTURADOS e um sistema de acompanhamento que garanta foco, direcionamento e resultados consistentes."
     },
@@ -100,7 +100,7 @@ const Index = () => {
         "Ambiente de trabalho tóxico ou de medo"
       ],
       tools: ["Mapeamento de cada posição e cargo existentes com técnicas de JOB DESCRIPTION", "Avaliação de Desempenho utilizando os conceitos do 9-BOX", "Treinamentos em metodologias de Liderança com base nas técnicas da Gestão 3.0", "Desenvolvimento de habilidades dos membros da equipe por PDI e REUNIÕES DE 1:1"],
-      icon: <Users className="w-12 h-12" />,
+      icon: <Users className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-gold",
       highlightText: "Para desenvolver uma LIDERANÇA EFICAZ e GESTÃO DE TALENTOS de excelência é necessário investir no desenvolvimento de competências, criar processos estruturados de avaliação e promover um ambiente de crescimento mútuo."
     },
@@ -115,7 +115,7 @@ const Index = () => {
         "Falta de padronização e perda de qualidade"
       ],
       tools: ["Remoção de desperdícios usando os conceitos de LEAN STARTUP", "Implantação graduativa e metrificada com GESTÃO DE MUDANÇAS", "Construção de uma base de conhecimento sólida e acessível", "Documentação e acessibilidade de processos transparentes"],
-      icon: <Settings className="w-12 h-12" />,
+      icon: <Settings className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-primary",
       highlightText: "Para otimizar seus PROCESSOS OPERACIONAIS é fundamental eliminar desperdícios, padronizar atividades e criar fluxos de trabalho eficientes que agreguem valor real ao cliente e à organização."
     },
@@ -130,7 +130,7 @@ const Index = () => {
         "Decisões baseadas em achismos, sem indicadores concretos"
       ],
       tools: ["Definição e comunicação dos indicadores do seu negócio com KPIs", "Acessibilização à medição do atingimento de metas em DASHBOARDS", "Transparência do trabalho em progresso com as técnicas do KANBAN", "Comunicação assíncrona e documentação de decisões com DCA e VGS"],
-      icon: <Eye className="w-12 h-12" />,
+      icon: <Eye className="w-12 h-12 max-sm:hidden" />,
       bgColor: "bg-gradient-gold",
       highlightText: "Para implementar uma GESTÃO À VISTA eficaz é essencial criar sistemas de indicadores transparentes, dashboards acessíveis e processos que permitam acompanhamento em tempo real dos resultados por toda a equipe."
     }
@@ -220,7 +220,7 @@ const Index = () => {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-20 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-jf-gold mb-6">
@@ -289,7 +289,7 @@ const Index = () => {
 
       {/* Detailed Services */}
       {detailedServices.map((service, index) => (
-        <section key={index} className="py-4 px-4">
+        <section key={index} className="py-4">
           <div className="container mx-auto max-w-6xl">
             <div className={`${service.bgColor} text-white rounded-t-2xl p-8`}>
               <div className="flex items-center gap-4 mb-4">
