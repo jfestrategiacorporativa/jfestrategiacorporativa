@@ -1,19 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Instagram, Rocket, House } from "lucide-react";
+import { BookOpen, Instagram, ShoppingBag, House } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BibliotecaLideranca = () => {
-  const books = [
+  const peopleManagementBooks = [
     {
       title: "Gapology",
       subtitle: "Como líderes vencedores fecham gaps de performance",
+      img: {
+        src: "img/books/covers/gapology.jpg",
+        alt: "Gapology Cover"
+      },
       authors: [
         "Mark Thienes",
         "Brian Brockhoff"
       ],
-      affiliateLink: "https://a.co/d/iA0zTO0",
-      jfecInstagramPostLink: "https://www.instagram.com/p/DOW-JwSjryO/"
+      affiliate: {
+        link: "https://amzn.to/47ALqbM",
+        platform: "Amazon.com"
+      },
+      instagramPost: "https://www.instagram.com/p/DOhOmbhDx2r/?img_index=1"
     }
   ]
 
@@ -85,7 +92,63 @@ const BibliotecaLideranca = () => {
             </CardContent>
           </Card>
 
-          {/* Second Banner - Acompanhe */}
+          {/* Grid de Livros */}
+          <div className="grid md:grid-cols-3 gap-4 mb-4">
+            {peopleManagementBooks.map((book, index) => (
+              <Card key={index} className="overflow-hidden border-2 border-jf-purple/20 shadow-lg">
+                <div className="bg-gradient-primary text-white p-8">
+                  <div className="flex-column justify-center gap-4 mb-4 text-center">
+                    <h2 className="text-3xl font-bold text-jf-gold mb-4">{book.title}</h2>
+                    <h3 className="text-xl text-white">{book.subtitle}</h3>
+                  </div>
+                </div>
+                <CardContent className="p-8 space-y-6">
+                  <div className="space-y-4 text-lg leading-relaxed flex flex-col items-center justify-center">
+                    <img 
+                      src={book.img.src}
+                      alt={book.img.alt}
+                      className="w-lg rounded"
+                    />
+
+                    <div className="text-muted-foreground text-center">
+                      Por {book.authors.map((author, index, authors) => (
+                        `${authors[index+2] ? author + ", " : (authors[index+1] ? author + ' e ' : author )}`
+                      ))}
+                    </div>
+                    
+                    <div className="flex flex-col">
+                      <Button 
+                        asChild 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-jf-purple text-jf-purple hover:bg-jf-purple hover:text-white"
+                      >
+                        <a href={book.affiliate.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <ShoppingBag className="w-8 h-8" />
+                          Comprar livro
+                        </a>
+                      </Button>
+
+                      <Button 
+                        asChild 
+                        size="sm" 
+                        variant="outline" 
+                        className="mt-2 border-jf-purple text-jf-purple hover:bg-jf-purple hover:text-white"
+                      >
+                        <a href={book.instagramPost} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <Instagram className="w-8 h-8" />
+                          Ir para o post
+                        </a>
+                      </Button>
+                    </div>
+                    
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Last Banner - Acompanhe */}
           <Card className="border border-muted bg-muted/20">
             <CardContent className="p-6 text-center">
               <div className="p-2">
