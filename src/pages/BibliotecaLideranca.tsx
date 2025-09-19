@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const BibliotecaLideranca = () => {
   const peopleManagementBooks = [
     {
-      title: "Gapology",
+      title: "GAPOLOGY",
       subtitle: "Como líderes vencedores fecham gaps de performance",
       img: {
         src: "img/books/covers/gapology.jpg",
-        alt: "Gapology Cover"
+        alt: "Gapology − Capa"
       },
       authors: [
         "Mark Thienes",
@@ -18,6 +18,22 @@ const BibliotecaLideranca = () => {
       ],
       affiliate: {
         link: "https://amzn.to/47ALqbM",
+        platform: "Amazon.com"
+      },
+      instagramPost: "https://www.instagram.com/p/DOhOmbhDx2r/?img_index=1"
+    },
+    {
+      title: "COMECE PELO PORQUÊ",
+      subtitle: "Como grandes líderes inspiram pessoas e equipes a agir",
+      img: {
+        src: "img/books/covers/comece-pelo-porque.jpg",
+        alt: "Comece pelo Porquê − Capa"
+      },
+      authors: [
+        "Simon Sinek"
+      ],
+      affiliate: {
+        link: "https://amzn.to/42yzljO",
         platform: "Amazon.com"
       },
       instagramPost: "https://www.instagram.com/p/DOhOmbhDx2r/?img_index=1"
@@ -112,7 +128,7 @@ const BibliotecaLideranca = () => {
                     <img
                       src={book.img.src}
                       alt={book.img.alt}
-                      className="w-lg rounded"
+                      className="h-md max-h-[500px] rounded"
                     />
 
                     <div className="text-muted-foreground text-center">
