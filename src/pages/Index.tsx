@@ -402,9 +402,9 @@ const Index = () => {
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white border-none"
               >
-                <a href="https://wa.me/5521982674009" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <a href="https://wa.me/5521973699327" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <MessageCircle className="w-5 h-5" />
-                  (21) 98267-4009
+                  (21) 97369-9327
                 </a>
               </Button>
               
