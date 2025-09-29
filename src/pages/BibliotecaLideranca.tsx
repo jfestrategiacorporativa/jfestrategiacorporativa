@@ -36,7 +36,23 @@ const BibliotecaLideranca = () => {
         link: "https://amzn.to/42yzljO",
         platform: "Amazon.com"
       },
-      instagramPost: "https://www.instagram.com/p/DOhOmbhDx2r/?img_index=1"
+      instagramPost: ""
+    },
+    {
+      title: "EMPATIA ASSERTIVA",
+      subtitle: "Como ser um líder incisivo sem perder a humanidade",
+      img: {
+        src: "img/books/covers/empatia-assertiva.jpg",
+        alt: "Empatia Assertiva − Capa"
+      },
+      authors: [
+        "Kim Scott"
+      ],
+      affiliate: {
+        link: "https://amzn.to/4nsnEUy",
+        platform: "Amazon.com"
+      },
+      instagramPost: ""
     }
   ]
 
