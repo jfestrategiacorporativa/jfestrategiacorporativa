@@ -53,6 +53,22 @@ const BibliotecaLideranca = () => {
         platform: "Amazon.com"
       },
       instagramPost: ""
+    },
+    {
+      title: "JUNTOS SOMOS MELHORES",
+      subtitle: "Um livro inspirador sobre o poder da união e a busca pelo propósito",
+      img: {
+        src: "img/books/covers/juntos-somos-melhores.png",
+        alt: "Juntos Somos Melhores − Capa"
+      },
+      authors: [
+        "Simon Sinek"
+      ],
+      affiliate: {
+        link: "https://amzn.to/42zaA7g",
+        platform: "Amazon.com"
+      },
+      instagramPost: "https://www.instagram.com/p/DPpQ4AckUnX"
     }
   ]
 
