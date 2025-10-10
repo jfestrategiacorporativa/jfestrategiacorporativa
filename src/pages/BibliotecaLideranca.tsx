@@ -36,7 +36,7 @@ const BibliotecaLideranca = () => {
         link: "https://amzn.to/42yzljO",
         platform: "Amazon.com"
       },
-      instagramPost: ""
+      instagramPost: "https://www.instagram.com/p/DO1srwyD9Fp/"
     },
     {
       title: "EMPATIA ASSERTIVA",
