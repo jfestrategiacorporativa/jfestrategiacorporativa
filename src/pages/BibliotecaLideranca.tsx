@@ -42,7 +42,7 @@ const BibliotecaLideranca = () => {
       title: "EMPATIA ASSERTIVA",
       subtitle: "Como ser um líder incisivo sem perder a humanidade",
       img: {
-        src: "img/books/covers/empatia-assertiva.jpg",
+        src: "img/books/covers/empatia-assertiva.png",
         alt: "Empatia Assertiva − Capa"
       },
       authors: [
@@ -52,7 +52,7 @@ const BibliotecaLideranca = () => {
         link: "https://amzn.to/4nsnEUy",
         platform: "Amazon.com"
       },
-      instagramPost: ""
+      instagramPost: "https://www.instagram.com/p/DPCv3glj91-/"
     },
     {
       title: "JUNTOS SOMOS MELHORES",
